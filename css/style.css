@@ -1,0 +1,50 @@
+:root{color-scheme:dark;--bg:#080e1a;--panel:#101c2e;--input:#0a1424;--text:#eaf3ff;--muted:#a1b4cb;--line:#2a405b;--cyan:#63e2dd;--blue:#7baaff;--red:#ff91a3}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 0,#152b49,transparent 55%),var(--bg);color:var(--text);font:14px/1.55 system-ui,sans-serif}body.light{color-scheme:light;--bg:#eef3fa;--panel:#fff;--input:#f3f6fc;--text:#13273c;--muted:#465e76;--line:#c4d2e0;--cyan:#007c80;--blue:#295fbb;--red:#b8244d}button,input,select{font:inherit;color:var(--text);border:1px solid var(--line);border-radius:9px;background:var(--input);padding:9px;min-width:0}button{cursor:pointer;font-weight:600}button:hover{border-color:var(--cyan)}button:focus-visible,input:focus-visible,select:focus-visible,canvas:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}button.active,.primary{background:var(--cyan);color:var(--bg);border-color:var(--cyan)}input,select{width:100%}input[type=checkbox]{width:auto;accent-color:var(--cyan)}input[type=range]{padding:0;accent-color:var(--cyan)}label{display:block;font-size:12px;color:var(--muted);margin:10px 0 5px}h1{font-size:clamp(27px,3.5vw,44px);letter-spacing:-.05em;line-height:1.15;margin:12px 0}h2{font-size:17px;margin:0}h3{font-size:15px}p{margin:7px 0 13px}small,.muted{color:var(--muted)}.shell{max-width:1560px;margin:auto;padding:24px}.topbar,.row{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.topbar{justify-content:space-between}.brand{font-size:22px;font-weight:800;letter-spacing:-1px}.brand b{color:var(--cyan)}.logo{display:inline-grid;place-items:center;background:var(--cyan);color:var(--bg);border-radius:12px;width:38px;height:40px;font:italic 30px Georgia;margin-right:9px}.intro{margin:28px 0}.eyebrow{color:var(--cyan);letter-spacing:.17em;font-size:11px;text-transform:uppercase}.workspace{display:grid;grid-template-columns:310px minmax(0,1fr);gap:18px;align-items:start}.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:19px}.controls{position:sticky;top:12px}.stack{display:grid;gap:15px;min-width:0}.split{display:grid;grid-template-columns:1fr 1fr;gap:10px}.nrow{display:grid;grid-template-columns:40px 1fr 40px;gap:6px}.hint{font-size:12px;color:var(--muted)}.math{font:18px/1.6 Georgia,serif;overflow-wrap:anywhere;color:var(--cyan)}.preview{padding:9px 0}.graphwrap{height:430px;position:relative;margin:12px 0;background:var(--input);border-radius:12px;overflow:hidden}canvas{display:block;width:100%;height:100%;touch-action:none}.graphbar{justify-content:space-between}.legend{color:var(--muted);font-size:12px}.positive{color:var(--blue)}.negative{color:var(--red)}.switches label{margin:0}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.metric{padding:15px;min-width:0}.metric strong{display:block;font-size:clamp(19px,2.1vw,29px);letter-spacing:-.04em;color:var(--cyan);overflow-wrap:anywhere}.metric small{font-size:11px}.notice{border-left:3px solid var(--cyan);padding:10px 14px;background:var(--input);margin-top:12px}.warning{border-color:var(--red);color:var(--red)}.tabs{border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:15px}.tabs button{font-size:12px}.tab{display:none}.tab.active{display:block}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap}td,th{text-align:left;padding:10px;border-bottom:1px solid var(--line)}th{color:var(--muted)}.convergence{height:280px}.exercises{display:grid;grid-template-columns:1fr 1fr;gap:12px}.exercise{padding:15px;border:1px solid var(--line);border-radius:12px}.exercise input{margin:8px 0}details{margin:12px 0}summary{cursor:pointer;color:var(--cyan)}.teacher .intro,.teacher .secondary,.teacher .bottom{display:none}.teacher .graphwrap{height:62vh}.teacher .workspace{grid-template-columns:290px minmax(0,1fr)}.teacher{font-size:17px}.hidden-results .result{visibility:hidden}.hidden-results .bottom{display:none}#hover{min-height:23px;font-size:12px;color:var(--muted)}footer{margin:25px 0;color:var(--muted);text-align:center;font-size:12px}.full{width:100%;margin-top:9px}.print-info{display:none}@media(max-width:1000px){.metrics{grid-template-columns:1fr 1fr}.workspace{grid-template-columns:280px minmax(0,1fr)}}@media(max-width:760px){.shell{padding:12px}.workspace,.teacher .workspace{grid-template-columns:1fr}.controls{position:static}.intro{margin:20px 0}.graphwrap{height:340px}.panel{padding:15px}.exercises{grid-template-columns:1fr}.teacher .graphwrap{height:420px}.topbar button{font-size:12px}.metrics{gap:7px}.metric{padding:12px}}@media print{body{background:white!important;color:#111!important}.shell{padding:0}.intro,.controls,.topbar button,.tabs,.switches,.export,.secondary,footer{display:none!important}.workspace{display:block}.panel{break-inside:avoid;background:white;border-color:#bbb}.graphwrap{height:350px}.bottom{display:none}.print-info{display:block}.metrics{grid-template-columns:repeat(4,1fr)}.result{visibility:visible!important}.metric strong{color:#111}.graphbar button{display:none}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+/* Workspace de aula */
+:root{color-scheme:light;--bg:#fff;--panel:#fff;--input:#fff;--text:#24252c;--muted:#535660;--line:#d9dbe3;--cyan:#4f43a9;--blue:#275da2;--red:#a83955}
+body{background:#fff;display:grid;grid-template-rows:minmax(0,1fr) auto;height:100dvh;font-size:14px}
+.shell{max-width:none;width:100%;padding:0;margin:0;overflow:auto}
+.topbar{position:sticky;top:0;z-index:2;background:#fff;border-bottom:1px solid var(--line);padding:9px 18px}
+.brand{font-size:20px;letter-spacing:-.55px}
+.logo{width:30px;height:30px;border-radius:7px;font-size:24px;color:white}
+.workspace{grid-template-columns:300px minmax(0,1fr);gap:0}
+.controls{position:static;border:0;border-right:1px solid var(--line);border-radius:0;padding:16px;background:#fafafd}
+.controls h2{font-size:15px}
+.integral-display{display:grid;place-items:center;min-height:76px;padding:8px;margin:9px 0 12px;background:white;border:1px solid var(--line);border-radius:8px;overflow:auto;font-size:26px}
+.stack{padding:12px;gap:9px}
+.stack .panel{border-radius:8px;padding:11px}
+.graphwrap{height:clamp(240px,44vh,600px);border:1px solid var(--line);border-radius:5px;margin:8px 0}
+.graphbar h2{font-size:15px}
+.notice:not(.warning){display:none}
+.tab .notice:not(.warning){display:block}
+.switches,.legend{column-gap:13px}
+button,input,select{border-radius:6px;padding:7px 9px}
+button.active,.primary{background:var(--cyan);color:white}
+.controls label{margin-top:8px}
+.controls details{margin:8px 0}
+.controls .hint{margin-bottom:8px}
+.metrics{grid-template-columns:repeat(4,minmax(0,1fr))}
+.metrics .metric strong{font-size:clamp(17px,2vw,25px)}
+.bottom .tabs{margin-top:10px}
+.keyboard{background:#f0eff5;border-top:1px solid #d8d6e1;padding:4px 12px 9px}
+.keyboard-bar{max-width:660px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.keyboard-bar button{background:transparent;border-color:transparent}
+.keyboard-bar span{font-size:12px;color:var(--muted)}
+#keyboardPanel{max-width:660px;margin:auto}
+.keyboard-tabs{display:flex;gap:5px;margin:1px 0 5px}
+.keyboard-tabs button{background:transparent;border-color:transparent;padding:3px 10px}
+.keyboard-tabs button[aria-pressed=true]{background:#ded8fa;color:#332671}
+.math-keys{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:4px}
+.math-keys button{min-height:33px;background:#fff;border-color:#e3e0eb;font-size:15px;padding:3px}
+.math-keys button[data-action]{background:#e1dfea}
+.math-keys button:hover{border-color:var(--cyan)}
+@media(max-width:760px){.workspace{grid-template-columns:1fr}.controls{border-right:0;border-bottom:1px solid var(--line)}.topbar{padding:7px 10px}.stack{padding:8px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.graphwrap{height:320px}.math-keys button{font-size:13px;min-height:34px}.keyboard{padding-inline:7px}}
+@media print{body{display:block;height:auto}.shell{overflow:visible}.keyboard{display:none}}
+
+#controlsPanel > summary{font-size:15px;font-weight:650}
+#expression[aria-invalid=true]{border-color:#a83955;box-shadow:0 0 0 1px #a83955}
+@media(max-width:760px){
+  .keyboard{max-height:35dvh;overflow:auto}
+  .workspace > .stack{min-width:0}
+  #keyboardPanel{padding-bottom:env(safe-area-inset-bottom,0px)}
+}
